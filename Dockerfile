@@ -7,6 +7,10 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libnlopt-dev muscle phylip \
     && rm -rf /var/lib/apt/lists/*
 
+# iReceptor requirements
+RUN apt-get install -y python3 && apt-get install -y python3-pip
+RUN apt-get install -y zip
+
 # Install R dependencies
 RUN R -e "install.packages(c('remotes', 'svglite'))"
 
