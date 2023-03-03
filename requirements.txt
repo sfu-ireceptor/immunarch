@@ -1,0 +1,6 @@
+# iReceptor requirements
+airr>=1.4.0
+anndata
+pandas
+scipy
+scanpy
